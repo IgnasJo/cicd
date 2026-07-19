@@ -16,7 +16,7 @@ func TestGetAPIKey(t *testing.T) {
         input 		http.Header
         want  	  Expected
     }{
-        "normal":   {input: http.Header{"Authorization": []string{"ApiKey hello"}}, want: Expected{Val: "he", Err: nil}},
+        "normal":   {input: http.Header{"Authorization": []string{"ApiKey hello"}}, want: Expected{Val: "hello", Err: nil}},
     }
 
     for name, tc := range tests {
